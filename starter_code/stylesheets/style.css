@@ -144,8 +144,6 @@ header div p span{
     width: 120px;
  }
 
-
-
  .statistics h3{
     color: #540B51;
     font-size: 40px;
@@ -156,29 +154,26 @@ header div p span{
     font-size: 20px;
 }
 
- .statistics{
+.statistics{
     display:flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
- .statistics ul{
+
+
+.statistics-percentages{
+    width: 100vw;
     display: flex;
-    align-items: center;
-    gap:40px; 
+    justify-content: space-around;
+    list-style-type: none;
 }
 
-.statistics ul li{
-    display: block;
-    
-}
-
-.statistics ul li p{
+.statistics-percentages li{
     font-weight: bold;
     width:160px;
-    
-       
-}
+}   
 
 .statistics ul li p span{
     font-size: 50px;
@@ -188,7 +183,8 @@ header div p span{
 .try{
     background-color: #540B51;
     height: 300px;
-       
+    display: flex;
+    flex-direction: column;      
 }
 
 .try h3 {
@@ -198,7 +194,13 @@ header div p span{
     
 }
 
-.try button{
+.try-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.try-buttons button{
     text-transform: uppercase;
     border-radius: 5px;
     padding:20px 55px;
